@@ -1,1 +1,1 @@
-export const alwaysTen = () => 123;
+export const helloWorld = () => 'Hello World';
