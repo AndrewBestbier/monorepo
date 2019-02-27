@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mobile:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
+    volumes:
+      - /app/node_modules
+      - .:/app
