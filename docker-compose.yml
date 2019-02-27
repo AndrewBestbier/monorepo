@@ -1,6 +1,16 @@
 version: '3'
 
 services:
+  client:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - ./web:/app
+      - ./core:/app/src/core
+    ports:
+      - "3000:3000"
   mobile:
     build:
       context: ./mobile

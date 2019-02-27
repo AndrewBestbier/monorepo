@@ -1,1 +1,1 @@
-export const alwaysTen = () => 2019;
+export const alwaysTen = () => 123;
